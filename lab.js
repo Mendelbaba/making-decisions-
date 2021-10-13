@@ -24,8 +24,12 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-if(brittanisAge > amysAge){console.log("brittani is older")}
-else{console.log('Amy is older')}
+if (brittanisAge > amysAge) {
+  console.log("brittani is older")
+}
+else {
+  console.log('Amy is older')
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -34,8 +38,11 @@ else{console.log('Amy is older')}
 */
 
 //CODE HERE
-if(brittanisBirthYear == amysBirthYear){console.log("Bittani and Amy were born in the same year")}
-else{console.log("Brittani and Amy were not born in the same year")}
+if (brittanisBirthYear == amysBirthYear) {
+  console.log("Bittani and Amy were born in the same year")
+} else {
+  console.log("Brittani and Amy were not born in the same year")
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -50,7 +57,20 @@ let rain = true
 */
 
 //CODE HERE
-
+if (temperature > 80 && rain == true) {
+  console.log("take a tshirt and an umbrella")
+} else if (temperature > 60 && temperature < 80 && rain == true) {
+  console.log("take a rainjacket")
+} else if (temperature < 60 && rain == true) {
+  console.log("take a rain jacket and umbrella")
+} 
+if (temperature > 80 && rain == false) {
+  console.log("take a tshirt")
+} else if (temperature > 60 && temperature < 80 && rain == false) {
+  console.log("take a warm shirt")
+} else if (temperature < 60 && rain == false) {
+  console.log("sweater or coat")
+} 
 
 ////////// PROBLEM 5 //////////
 
@@ -59,7 +79,9 @@ let rain = true
 */
 
 //CODE HERE
-
+for (let i = 0; i < 10; i++) {
+  console.log("hello")
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -68,6 +90,9 @@ let rain = true
 */
 
 //CODE HERE
+for (let i = 0; i < 10; i++) {
+  console.log([i+1])
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -77,12 +102,18 @@ let rain = true
 */
 
 //CODE HERE
+for (let i = 10; i > 0; i--) {
+  console.log([i-1])
+}
 
 let score = 0
 let passingScore = 7
 
 ////////// PROBLEM 8 //////////
-
+while (score < passingScore) {
+  score++ 
+  console.log("score is not high enough", score, passingScore)
+}
 /*
   Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
 */
@@ -97,9 +128,16 @@ let passingScore = 7
   Check to see if changeMyMind is set to true or false, if it is true, change the status to false, if it is false, change the status to true.
 
 */
-
+let changeMyMind = true
 //CODE HERE
+if (changeMyMind === true) {
+   changeMyMind = false
+   console.log(changeMyMind)
 
+ } else {
+    changeMyMind = true 
+    console.log(changeMyMind)
+ }
 ////////// PROBLEM 10 //////////
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
